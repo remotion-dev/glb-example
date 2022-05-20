@@ -5,11 +5,11 @@ export const RemotionVideo = () => {
 	return (
 		<>
 			<Composition
-				durationInFrames={100}
+				durationInFrames={90}
 				fps={30}
 				component={Scene}
 				height={1080}
-				width={1080}
+				width={1920}
 				id="Scene"
 			/>
 		</>

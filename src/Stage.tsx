@@ -1,8 +1,9 @@
+// Copied from drei and made radius constant
+
 import * as React from 'react';
 import * as THREE from 'three';
 import {useThree} from '@react-three/fiber';
 import {Environment, ContactShadows} from '@react-three/drei';
-import {PresetsType} from '../helpers/environment-assets';
 
 const presets = {
 	rembrandt: {
@@ -26,13 +27,14 @@ const presets = {
 type ControlsProto = {update(): void; target: THREE.Vector3};
 
 type Props = JSX.IntrinsicElements['group'] & {
+	// eslint-disable-next-line react/boolean-prop-naming
 	shadows?: boolean;
+	// eslint-disable-next-line react/boolean-prop-naming
 	adjustCamera?: boolean;
 	environment?: 'city' | null;
 	intensity?: number;
 	ambience?: number;
-	// TODO: in a new major state.controls should be the only means of consuming controls, the
-	// controls prop can then be removed!
+	// Controls prop can then be removed!
 	controls?: React.MutableRefObject<ControlsProto>;
 	preset?: keyof typeof presets;
 	shadowBias?: number;
@@ -67,8 +69,8 @@ export const Stage = ({
 	const defaultControls = useThree((state) => state.controls) as ControlsProto;
 	const outer = React.useRef<THREE.Group>(null!);
 	const inner = React.useRef<THREE.Group>(null!);
-	const [{radius, width, height}, set] = React.useState({
-		radius: 10,
+	const [{radius, width, height}] = React.useState({
+		radius: 8,
 		width: 0,
 		height: 0,
 	});

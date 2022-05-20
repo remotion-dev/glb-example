@@ -1,9 +1,9 @@
 # Remotion .glb demo
 
-A repository showing how to import .glb files
+A repository showing how to import .glb files in Remotion. Ask React Three Fiber questions elsewhere, we (probably) have no idea!
 
 <p align="center">
-    <img src="demo.gif" style="border-radius: 5px">
+    <img src="video.gif" style="border-radius: 5px">
 </p>
 
 - [Remotion documentation](https://remotion.dev)
