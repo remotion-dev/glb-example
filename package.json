@@ -1,0 +1,33 @@
+{
+	"name": "remotion-template-three",
+	"version": "1.0.0",
+	"description": "A React Three Fiber Project",
+	"scripts": {
+		"start": "remotion preview src/index.tsx",
+		"build": "remotion render src/index.tsx Scene out/video.mp4",
+		"upgrade": "remotion upgrade",
+		"test": "eslint src --ext ts,tsx,js,jsx && tsc"
+	},
+	"repository": {},
+	"license": "UNLICENSED",
+	"dependencies": {
+		"@react-three/fiber": "^7.0.0",
+		"@remotion/cli": "^3.0.0",
+		"@remotion/eslint-config": "^3.0.0",
+		"@remotion/media-utils": "^3.0.0",
+		"@remotion/renderer": "^3.0.0",
+		"@remotion/three": "^3.0.0",
+		"eslint": "^8.14.0",
+		"prettier": "^2.6.2",
+		"react": "^18.0.0",
+		"react-dom": "^18.0.0",
+		"remotion": "^3.0.0",
+		"three": "^0.134.0",
+		"typescript": "^4.6.3"
+	},
+	"devDependencies": {
+		"@types/react": "^18.0.6",
+		"@types/three": "^0.128.0",
+		"@types/web": "^0.0.61"
+	}
+}
