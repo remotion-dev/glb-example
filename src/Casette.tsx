@@ -1,5 +1,4 @@
 import {useGLTF} from '@react-three/drei';
-import {useThree} from '@react-three/fiber';
 import React, {useRef} from 'react';
 import {interpolate, useCurrentFrame} from 'remotion';
 import * as THREE from 'three';
