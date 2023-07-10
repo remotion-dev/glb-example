@@ -107,6 +107,8 @@ export const Stage = ({
 			</group>
 			{contactShadow && (
 				<ContactShadows
+					matrixWorldAutoUpdate={undefined}
+					getObjectsByProperty={undefined}
 					scale={radius * 2}
 					far={radius / 2}
 					{...contactShadow}
