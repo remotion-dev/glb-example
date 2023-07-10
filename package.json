@@ -15,7 +15,7 @@
 		"@react-three/fiber": "^8.0.18",
 		"@remotion/cli": "4.0.4",
 		"@remotion/eslint-config": "4.0.4",
-		"@remotion/media-utils": "4.0.1",
+		"@remotion/media-utils": "4.0.4",
 		"@remotion/renderer": "4.0.4",
 		"@remotion/three": "4.0.4",
 		"eslint": "^8.14.0",
