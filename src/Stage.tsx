@@ -114,7 +114,6 @@ export const Stage = ({
 					{...contactShadow}
 				/>
 			)}
-			{environment && <Environment preset={environment} />}
 			<ambientLight intensity={intensity / 3} />
 			<spotLight
 				penumbra={1}
